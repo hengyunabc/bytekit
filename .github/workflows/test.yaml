@@ -40,5 +40,4 @@ jobs:
       - name: Build with Maven
         run: |
           source ~/.testenv
-          mvn -Dmaven.compiler.fork=true -Dmaven.compiler.executable=$JAVA8_HOME/bin/javac package
-          mvn test
+          mvn -Dmaven.compiler.fork=true -Dmaven.compiler.executable=$JAVA8_HOME/bin/javac package test
